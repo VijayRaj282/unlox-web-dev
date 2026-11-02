@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyScope | Weather & Movies</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <a href="#" class="brand">✦ SkyScope</a>
+
+        <nav>
+            <a href="#weather">Weather</a>
+            <a href="#movies">Movies</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <p class="eyebrow">YOUR EVERYDAY DISCOVERY TOOL</p>
+
+            <h1>Look up. <span>Look closer.</span></h1>
+
+            <p class="hero-copy">
+                Discover the weather around you and find your
+                next favourite movie — all in one place.
+            </p>
+        </section>
+
+        <!-- WEATHER APP -->
+        <section id="weather" class="section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / THE OUTSIDE WORLD</p>
+                    <h2>Weather today</h2>
+                </div>
+            </div>
+
+            <div class="weather-panel">
+
+                <form id="weather-form" class="search-form">
+                    <input
+                        type="search"
+                        id="city-input"
+                        placeholder="Enter a city, e.g. Bengaluru"
+                        aria-label="Enter city name"
+                        required
+                    >
+
+                    <button type="submit">
+                        Find Weather ↗
+                    </button>
+                </form>
+
+                <p id="weather-message" class="message" role="status">
+                    Search for a city to see its current weather.
+                </p>
+
+                <div id="weather-result" hidden></div>
+
+            </div>
+        </section>
+
+        <!-- MOVIE SEARCH APP -->
+        <section id="movies" class="section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">02 / TONIGHT'S WATCHLIST</p>
+                    <h2>Find your next movie</h2>
+                </div>
+            </div>
+
+            <form id="movie-form" class="search-form">
+
+                <input
+                    type="search"
+                    id="movie-input"
+                    placeholder="Search a movie, e.g. Interstellar"
+                    aria-label="Enter movie title"
+                    required
+                >
+
+                <button type="submit">
+                    Search Movies ↗
+                </button>
+
+            </form>
+
+            <p id="movie-message" class="message" role="status">
+                Search for a title to explore movies.
+            </p>
+
+            <div id="movie-results" class="movie-grid"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>✦ SkyScope</p>
+        <p>Built using HTML, CSS, JavaScript and public APIs.</p>
+    </footer>
+
+</body>
+</html>
